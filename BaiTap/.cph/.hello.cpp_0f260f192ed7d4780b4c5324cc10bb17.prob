@@ -1,0 +1,1 @@
+{"name":"Local: hello","url":"c:\\Users\\Thai\\OneDrive\\Documents\\FULLSTACK\\C++\\BaiTap\\hello.cpp","tests":[{"id":1725508313110,"input":"5","output":"01234\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Thai\\OneDrive\\Documents\\FULLSTACK\\C++\\BaiTap\\hello.cpp","group":"local","local":true}
