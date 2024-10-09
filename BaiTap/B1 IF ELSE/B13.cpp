@@ -11,7 +11,11 @@ int main()
     // Your code is here
     int a, b;
     cin >> a >> b;
-    cout << a / b * b;
+    if(a%b==0){
+        cout << a;
+    } else {
+        cout << a/b*b;
+    }
 
     return 0;
 }

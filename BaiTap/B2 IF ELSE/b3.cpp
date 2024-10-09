@@ -8,9 +8,8 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int a, b, x;
-    cin >> a >> b >> x;
-    cout << ceil(1.0 * a / x) * ceil(1.0 * b / x);
-
+    int n, m, a;
+    cin >> n >> m >> a;
+    cout<<ceil((double)n/a)*ceil((double)m/a);
     return 0;
 }

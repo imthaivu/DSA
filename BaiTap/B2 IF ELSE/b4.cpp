@@ -8,15 +8,12 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int a, b, s;
-    cin >> a >> b >> s;
-    if ((s - abs(a) + abs(b)) % 2 == 0)
-    {
-        cout << "yes";
-    }
-    else
-    {
-        cout << "no";
+    int a, b, k;
+    cin >> a >> b >> k;
+    if(k%2==0){
+        cout << (a-b)*k/2;
+    } else {
+        cout <<(a-b)*(k/2)+a;
     }
     return 0;
 }

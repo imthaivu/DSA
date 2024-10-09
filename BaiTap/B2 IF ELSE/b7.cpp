@@ -10,15 +10,6 @@ int main()
 
     int n, s;
     cin >> n >> s;
-    int dem = 0;
-    while (n<s)
-    {
-        dem+=s/n;
-        s%=n;
-    }
-    if(s != 0){
-        dem+=1;
-    }
-    cout << dem;
+    cout << s / n + ((s % n == 0) ? 0 : 1);
     return 0;
 }

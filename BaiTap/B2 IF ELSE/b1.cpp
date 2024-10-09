@@ -13,6 +13,6 @@ int main()
     double x = sqrt((a * c) / b);
     double y = sqrt((a * b) / c);
     double z = sqrt((c * b) / a);
-    cout << fixed << setprecision(0) << (x + y + z) * 4;
+    cout <<  (ll)(x + y + z) * 4;
     return 0;
 }
