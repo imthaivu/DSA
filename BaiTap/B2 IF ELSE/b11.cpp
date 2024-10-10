@@ -8,19 +8,13 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int k, n, w;
-    cin >> k >> n >> w;
-    long s = 1ll * w * (k + 1ll * w * k) / 2;
-    // cout << s;
-    // cout << n;
-    if (s > n)
-    {
-        cout << s - n;
+    int k,n,w;
+    cin>>k>>n>>w;
+    int res =  (w+1)*w/2*k -n;
+    if(res>0){
+        cout <<res;
+    } else {
+        cout <<0;
     }
-    else
-    {
-        cout << 0;
-    }
-
     return 0;
 }

@@ -8,13 +8,12 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    long n; // 8
+    ll n;
     cin >> n;
-    short cnt = 0; // 1
-    while (n > 0)
-    {
+    int cnt =0;
+    while(n%10>0){
         cnt++;
-        n /= 10;
+        n/=10;
     }
     cout << cnt;
     return 0;
