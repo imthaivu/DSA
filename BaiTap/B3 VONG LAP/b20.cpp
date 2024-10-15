@@ -8,36 +8,34 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n;
-    cin >> n;
-    int arrMC[n][2];
-    int chiSo = 0; // chi so
-    for (int i = 0; i < n; i++)
+    int soVong;
+    cin >> soVong;
+    int soDiem = 0;
+    for (int i = 0; i < soVong; i++)
     {
-        cin >> arrMC[i][0]; // nhap Mishka
-        cin >> arrMC[i][1]; // nhap Chris
-        if (arrMC[i][0] > arrMC[i][1])
+        int mi,ci;
+        cin >> mi >> ci;
+        if (mi > ci)
         {
-            chiSo++;
+            soDiem++;
         }
-        else if (arrMC[i][0] < arrMC[i][1])
+        else if (mi < ci)
         {
-            chiSo--;
+            soDiem--;
         }
     }
-    // tinh ket qua
-    if (chiSo == 0)
+    if (soDiem > 0)
     {
-        cout << "Friendship is magic! ^^";
+        cout << "Mishka";
     }
-    else if (chiSo < 0)
+    else if (soDiem < 0)
     {
         cout << "Chris";
     }
     else
     {
-        cout << "Mishka";
+        cout << "Friendship is magic!^^";
     }
-
+    
     return 0;
 }
